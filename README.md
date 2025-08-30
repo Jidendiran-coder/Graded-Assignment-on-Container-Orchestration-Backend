@@ -226,9 +226,9 @@ Before running the pipeline:
 - Jenkins node has Docker installed and running.
 - Jenkins node has kubectl and helm installed.
 - Jenkins has these credentials configured:
-  - jidendiran-github-access (GitHub access token)
-  - jidendiran-access-key-id (AWS Access Key)
-  - jidendiran-secret-access-key (AWS Secret Key)
+  - jide-github-access (GitHub access token)
+  - jide-access-key-id (AWS Access Key)
+  - jide-secret-access-key (AWS Secret Key)
   - learn-api-db (MongoDB connection string)
   - learn-hash-key (hash secret)
   - learn-jwt-secret-key (JWT secret)
