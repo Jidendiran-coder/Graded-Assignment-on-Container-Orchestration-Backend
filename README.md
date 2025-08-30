@@ -299,7 +299,7 @@ After deployment:
 
 #### Output - Mongo DB Data storing
 
-<img width="1470" height="758" alt="mongo_db" src="https://github.com/user-attachments/assets/43a43d25-327b-4ee5-a392-0a448bd7536f" />
+<img width="1470" height="758" alt="mongo_db" src="https://github.com/user-attachments/assets/629f804b-eead-43fc-886b-fdebfa9b584c" />
 
 
 ### ✨ SSL Mapping (Optional)
