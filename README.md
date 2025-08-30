@@ -151,23 +151,23 @@ eksctl create cluster \
 
 #### Output EKS Cluster
 
-![alt text](output/eks_cluster.png)
+<img width="1470" height="731" alt="eks_cluster" src="https://github.com/user-attachments/assets/237c7f3f-e07d-4e2f-a354-e434936518c0" />
 
 #### Output EKS Cluster - Nodes
 
-![alt text](output/eks_node.png)
+<img width="1206" height="638" alt="eks_node" src="https://github.com/user-attachments/assets/9e5085fc-e8fa-47fa-8ee4-659452583968" />
 
 #### Output EKS Cluster - Deployments
 
-![alt text](output/eks_cluster_deployments.png)
+<img width="1193" height="467" alt="eks_cluster_deployments" src="https://github.com/user-attachments/assets/fcdd2567-b252-4f37-ae2b-5a9654fac21d" />
 
 #### Output EKS Cluster - Pods
 
-![alt text](output/eks_cluster_pods.png)
+<img width="1459" height="718" alt="eks_cluster_pods" src="https://github.com/user-attachments/assets/1cbd7b79-6b90-44cc-a51c-0b1082cd95f9" />
 
 #### Output EKS Cluster - Addons enabled
 
-![alt text](output/eks_addons.png)
+<img width="1206" height="687" alt="eks_addons" src="https://github.com/user-attachments/assets/81cc6b81-0be3-4f7b-8354-d0caaf74b630" />
 
 
 ### 2️⃣ Update Local Kubeconfig
@@ -187,16 +187,15 @@ kubectl config use-context arn:aws:eks:ap-south-1:<account_id>:cluster/jide-clus
 
 #### Output EKS Cluster - Namespaces
 
-![alt text](output/eks_cluster_namespaces.png)
+<img width="1200" height="434" alt="eks_cluster_namespaces" src="https://github.com/user-attachments/assets/c05fcf72-2571-482a-9410-0ecef41aab59" />
 
 #### Output EKS Cluster - Listing Pods, SVC, Helm
 
-![alt text](output/eks_cli_output.png)
+<img width="1470" height="404" alt="eks_cli_output" src="https://github.com/user-attachments/assets/258a55b9-a7d7-4240-96d8-7528877434f5" />
 
 #### Output EKS Cluster - Helm Deployment history
 
-![alt text](output/api_helm_output.png)
-
+<img width="1470" height="681" alt="api_helm_output" src="https://github.com/user-attachments/assets/6adda887-fa75-4426-8f02-0a6b30692e21" />
 
 ## ⚙️ Jenkins Configuration for Kubectl
 
@@ -236,19 +235,19 @@ Before running the pipeline:
 
 #### Output - Jenkin Variables
 
-![alt text](output/jenkins_variables.png)
+<img width="1219" height="287" alt="jenkins_variables" src="https://github.com/user-attachments/assets/c597df9e-6a7f-4918-acd4-9b9458cd4602" />
 
 #### Output - Jenkin Pipeline List
 
-![alt text](output/jenkins_list.png)
+<img width="1095" height="373" alt="jenkins_list" src="https://github.com/user-attachments/assets/36f1c12e-e626-4e5d-939a-120aee55bc22" />
 
 #### Output - Jenkin Build and Push Success to ECR with build number
 
-![alt text](output/api_ecr_images.png)
+<img width="1470" height="721" alt="api_ecr_images" src="https://github.com/user-attachments/assets/3c70c6f7-4cca-4144-b3bc-0b611fca409a" />
 
 #### Output - Jenkin Pipeline Success
 
-![alt text](output/api_jenkins_output.png)
+<img width="1468" height="830" alt="api_jenkins_output" src="https://github.com/user-attachments/assets/173451df-a3cd-488b-b9f6-b7b31b6ddac8" />
 
 ## 📝 Important Notes and Outputs
 
@@ -262,8 +261,7 @@ This creates an **AWS ELB** exposing the API publicly.
 
 #### Output - AWS Load balancer
 
-![alt text](output/load_balancer.png)
-
+<img width="1470" height="440" alt="load_balancer" src="https://github.com/user-attachments/assets/ceb79be4-d9ca-4ec4-8bce-e5fd3f579844" />
 
 ### ✅ Service Port Configuration:
 
@@ -291,17 +289,17 @@ After deployment:
 
 #### Output - API working in Loadbalancer DNS end point
 
-![alt text](output/api_eks_dns.png)
+<img width="1470" height="243" alt="api_eks_dns" src="https://github.com/user-attachments/assets/75ad2762-d36e-4c9f-80c5-3a87afae0a47" />
 
 
 #### Output - API working in Custom APi end point after pointing the DNS CNAME on the domain 
 
-![alt text](output/api_custom_domain.png)
+<img width="1469" height="797" alt="api_custom_domain" src="https://github.com/user-attachments/assets/f5e8ae2a-6d17-4f04-a280-f04f95302a8d" />
 
 
 #### Output - Mongo DB Data storing
 
-![alt text](output/mongo_db.png)
+<img width="1470" height="758" alt="mongo_db" src="https://github.com/user-attachments/assets/43a43d25-327b-4ee5-a392-0a448bd7536f" />
 
 
 ### ✨ SSL Mapping (Optional)
