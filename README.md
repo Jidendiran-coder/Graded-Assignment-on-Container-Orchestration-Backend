@@ -1,4 +1,4 @@
-# 🎯 Learner Website Backend – Kubernetes Deployment
+# 🎯 Backend Website – Kubernetes Deployment
 
 A Node.js + MongoDB REST API backend for learner reporting and management.
 
@@ -65,19 +65,19 @@ The application requires these environment variables (in Kubernetes, provided vi
 To build and run locally:
 
 ```
-docker build -t thirumalai-b10/learn-api:latest .
+docker build -t jidendir-b10/learn-api:latest .
 ```
 
 ### 2️⃣ Tag Image for ECR
 
 ```
-docker tag thirumalai-b10/learn-api:latest 975050024946.dkr.ecr.ap-south-1.amazonaws.com/thirumalai-b10/learn-api:latest
+docker tag jidendir-b10/learn-api:latest 975050024946.dkr.ecr.ap-south-1.amazonaws.com/jidendir-b10/learn-api:latest
 ```
 
 ### 3️⃣ Push Image to ECR
 
 ```
-docker push 975050024946.dkr.ecr.ap-south-1.amazonaws.com/thirumalai-b10/learn-api:latest
+docker push 975050024946.dkr.ecr.ap-south-1.amazonaws.com/jidendir-b10/learn-api:latest
 ```
 
 ### 4️⃣ Run the Docker Container Locally (from ECR Image)
@@ -87,7 +87,7 @@ docker run -d -p 3001:3001 --name api-learn-ecr \
   -e ATLAS_URI="mongodb-url/learnerReport?retryWrites=true&w=majority" \
   -e HASH_KEY="thisIsMyHashKey" \
   -e JWT_SECRET_KEY="thisIsMyJwtSecretKey" \
-  975050024946.dkr.ecr.ap-south-1.amazonaws.com/thirumalai-b10/learn-api:latest
+  975050024946.dkr.ecr.ap-south-1.amazonaws.com/jidendir-b10/learn-api:latest
 ```
 
 ### 5️⃣ Run the Docker Container Locally (from local build)
@@ -97,7 +97,7 @@ docker run -d -p 3001:3001 --name api-learn \
   -e ATLAS_URI="mongodb-url/learnerReport?retryWrites=true&w=majority" \
   -e HASH_KEY="thisIsMyHashKey" \
   -e JWT_SECRET_KEY="thisIsMyJwtSecretKey" \
-  thirumalaipy/learnapi:1.0
+  jidendirpy/learnapi:1.0
 ```
 
 ## ☸️ Kubernetes Deployment (AWS EKS)
@@ -121,7 +121,7 @@ docker run -d -p 3001:3001 --name api-learn \
 ```
 helm upgrade --install learn-api . \
 -f values.yaml \
---set-string image.repository="thirumalaipy/learnapi" \
+--set-string image.repository="jidendirpy/learnapi" \
 --set-string image.tag="v1" \
 --set-string database_url="mongo_db_url" \
 --set-string hash_key="thisIsMyHashKeydev" \
@@ -143,7 +143,7 @@ helm upgrade --install learn-api . \
 
 ```
 eksctl create cluster \
-  --name thiru-cluster-1 \
+  --name jide-cluster-1 \
   --region ap-south-1 \
   --node-type t2.medium \
   --zones ap-south-1a,ap-south-1b
@@ -172,13 +172,13 @@ eksctl create cluster \
 
 ### 2️⃣ Update Local Kubeconfig
 
-`aws eks update-kubeconfig --region ap-south-1 --name thiru-cluster-1`
+`aws eks update-kubeconfig --region ap-south-1 --name jide-cluster-1`
 
 
 ### 2️⃣ Update Local Kubeconfig
 
 ```
-kubectl config use-context arn:aws:eks:ap-south-1:<account_id>:cluster/thiru-cluster-1
+kubectl config use-context arn:aws:eks:ap-south-1:<account_id>:cluster/jide-cluster-1
 ```
 
 ### 3️⃣ Create the namespace
@@ -227,9 +227,9 @@ Before running the pipeline:
 - Jenkins node has Docker installed and running.
 - Jenkins node has kubectl and helm installed.
 - Jenkins has these credentials configured:
-  - thiru-github-access (GitHub access token)
-  - thiru-access-key-id (AWS Access Key)
-  - thiru-secret-access-key (AWS Secret Key)
+  - jidendiran-github-access (GitHub access token)
+  - jidendiran-access-key-id (AWS Access Key)
+  - jidendiran-secret-access-key (AWS Secret Key)
   - learn-api-db (MongoDB connection string)
   - learn-hash-key (hash secret)
   - learn-jwt-secret-key (JWT secret)
