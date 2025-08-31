@@ -97,7 +97,7 @@ docker run -d -p 3001:3001 --name api-learn \
   -e ATLAS_URI="mongodb-url/learnerReport?retryWrites=true&w=majority" \
   -e HASH_KEY="thisIsMyHashKey" \
   -e JWT_SECRET_KEY="thisIsMyJwtSecretKey" \
-  jidendirpy/learnapi:1.0
+  jidendir-b10/learn-api:1.0
 ```
 
 ## ☸️ Kubernetes Deployment (AWS EKS)
