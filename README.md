@@ -121,7 +121,7 @@ docker run -d -p 3001:3001 --name api-learn \
 ```
 helm upgrade --install learn-api . \
 -f values.yaml \
---set-string image.repository="jidendirpy/learnapi" \
+--set-string image.repository="jidendirpy/learn-api" \
 --set-string image.tag="v1" \
 --set-string database_url="mongo_db_url" \
 --set-string hash_key="thisIsMyHashKeydev" \
